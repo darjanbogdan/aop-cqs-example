@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.Web", "AopExample.Web\AopExample.Web.csproj", "{6A3795DF-594C-4760-A59C-9208C8CB74D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.DAL", "AopExample.DAL\AopExample.DAL\AopExample.DAL.csproj", "{59C311CF-B96E-4AA4-9903-60DF9717455F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.DAL", "AopExample.DAL\AopExample.DAL.csproj", "{59C311CF-B96E-4AA4-9903-60DF9717455F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.Repository", "AopExample.Repository\AopExample.Repository.csproj", "{D3AFAD0D-247A-4A98-B05A-ED12795AEB6A}"
 EndProject
