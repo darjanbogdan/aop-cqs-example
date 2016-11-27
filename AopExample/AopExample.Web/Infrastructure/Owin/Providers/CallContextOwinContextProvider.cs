@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Web;
 
-namespace AopExample.Web.Infrastructure.Owin
+namespace AopExample.Web.Infrastructure.Owin.Providers
 {
     public class CallContextOwinContextProvider : IOwinContextProvider
     {

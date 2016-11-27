@@ -13,6 +13,18 @@ namespace AopExample.DAL.Identity.Manager
         public ApplicationUserManager(IUserStore<ApplicationUser, Guid> store)
             : base(store)
         {
+            this.UserValidator = new UserValidator<ApplicationUser, Guid>(this)
+            {
+                AllowOnlyAlphanumericUserNames = true,
+                RequireUniqueEmail = true
+            };
+
+            this.PasswordValidator = new PasswordValidator()
+            {
+                RequiredLength = 6
+            };
+
+            this.PasswordHasher = new PlainPasswordHasher();
         }
     }
 }

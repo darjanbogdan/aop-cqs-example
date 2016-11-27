@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.Service", "AopEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.Model", "AopExample.Model\AopExample.Model.csproj", "{DDBFDE15-0AFE-481C-8E72-0AEAA6E16D4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.Core", "AopExample.Core\AopExample.Core.csproj", "{6DEEA8AD-4EFE-411B-BB15-A2DEF663A2A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopExample.Repository.Common", "AopExample.Repository.Common\AopExample.Repository.Common.csproj", "{7F6C4C30-370C-4818-892C-8178684C3F13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{DDBFDE15-0AFE-481C-8E72-0AEAA6E16D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDBFDE15-0AFE-481C-8E72-0AEAA6E16D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDBFDE15-0AFE-481C-8E72-0AEAA6E16D4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEEA8AD-4EFE-411B-BB15-A2DEF663A2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEEA8AD-4EFE-411B-BB15-A2DEF663A2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEEA8AD-4EFE-411B-BB15-A2DEF663A2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEEA8AD-4EFE-411B-BB15-A2DEF663A2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6C4C30-370C-4818-892C-8178684C3F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6C4C30-370C-4818-892C-8178684C3F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6C4C30-370C-4818-892C-8178684C3F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6C4C30-370C-4818-892C-8178684C3F13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

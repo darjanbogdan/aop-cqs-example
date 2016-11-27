@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AopExample.Repository
+namespace AopExample.Core.Query
 {
-    public class Class1
+    public interface IQuery<TResult>
     {
     }
 }

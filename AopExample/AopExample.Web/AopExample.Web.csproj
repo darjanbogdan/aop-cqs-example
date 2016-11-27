@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -155,8 +159,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Infrastructure\DependencyInjection\SimpleInjectorContainerFactory.cs" />
-    <Compile Include="Infrastructure\Owin\CallContextOwinContextProvider.cs" />
-    <Compile Include="Infrastructure\Owin\IOwinContextProvider.cs" />
+    <Compile Include="Infrastructure\Owin\Providers\CallContextOwinContextProvider.cs" />
+    <Compile Include="Infrastructure\Owin\Providers\CustomOAuthProvider.cs" />
+    <Compile Include="Infrastructure\Owin\Providers\IOwinContextProvider.cs" />
     <Compile Include="Infrastructure\Owin\OwinContextExecutionScopeMiddleware.cs" />
     <Compile Include="Infrastructure\Owin\OwinContextProviderMiddleware.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,9 +182,29 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AopExample.Core\AopExample.Core.csproj">
+      <Project>{6deea8ad-4efe-411b-bb15-a2def663a2a0}</Project>
+      <Name>AopExample.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AopExample.DAL\AopExample.DAL\AopExample.DAL.csproj">
       <Project>{59c311cf-b96e-4aa4-9903-60df9717455f}</Project>
       <Name>AopExample.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AopExample.Model\AopExample.Model.csproj">
+      <Project>{ddbfde15-0afe-481c-8e72-0aeaa6e16d4f}</Project>
+      <Name>AopExample.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AopExample.Repository.Common\AopExample.Repository.Common.csproj">
+      <Project>{7f6c4c30-370c-4818-892c-8178684c3f13}</Project>
+      <Name>AopExample.Repository.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AopExample.Repository\AopExample.Repository.csproj">
+      <Project>{d3afad0d-247a-4a98-b05a-ed12795aeb6a}</Project>
+      <Name>AopExample.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AopExample.Service\AopExample.Service.csproj">
+      <Project>{2edfd877-c200-4f52-bfb8-b1067dfa2796}</Project>
+      <Name>AopExample.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

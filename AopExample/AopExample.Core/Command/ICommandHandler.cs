@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AopExample.Model
+namespace AopExample.Core.Command
 {
-    public class Class1
+    public interface ICommandHandler<TCommand>
     {
+        Task ExecuteAsync(TCommand command);
     }
 }

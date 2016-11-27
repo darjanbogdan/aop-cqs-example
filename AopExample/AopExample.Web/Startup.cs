@@ -1,6 +1,9 @@
 ﻿using AopExample.DAL.Identity.Models;
+using AopExample.Repository.Infrastructure.Mapper;
 using AopExample.Web.Infrastructure.DependencyInjection;
 using AopExample.Web.Infrastructure.Owin;
+using AopExample.Web.Infrastructure.Owin.Providers;
+using AutoMapper;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Cors;
@@ -26,6 +29,17 @@ namespace AopExample.Web
             container.RegisterPackages();
 
             container.RegisterSingleton<IOwinContextProvider>(new CallContextOwinContextProvider());
+
+            #region Mapper
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<RepositoryProfile>();
+            });
+
+            container.Register<IMapper>(() => config.CreateMapper(container.GetInstance));
+
+            #endregion Mapper
 
             app.UseOwinContextExecutionScope(container);
 

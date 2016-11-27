@@ -69,6 +69,7 @@
     <Compile Include="DIPackage.cs" />
     <Compile Include="Context\ApplicationDbContext.cs" />
     <Compile Include="Identity\Manager\ApplicationUserManager.cs" />
+    <Compile Include="Identity\Manager\PlainPasswordHasher.cs" />
     <Compile Include="Identity\Models\ApplicationRole.cs" />
     <Compile Include="Identity\Models\ApplicationUser.cs" />
     <Compile Include="Identity\Models\ApplicationUserClaim.cs" />
