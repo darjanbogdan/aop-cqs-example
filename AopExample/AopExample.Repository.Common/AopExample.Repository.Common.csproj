@@ -46,7 +46,7 @@
     <Compile Include="Repositories\IUserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AopExample.DAL\AopExample.DAL\AopExample.DAL.csproj">
+    <ProjectReference Include="..\AopExample.DAL\AopExample.DAL.csproj">
       <Project>{59C311CF-B96E-4AA4-9903-60DF9717455F}</Project>
       <Name>AopExample.DAL</Name>
     </ProjectReference>

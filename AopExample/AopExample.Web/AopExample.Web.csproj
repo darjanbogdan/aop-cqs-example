@@ -153,7 +153,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -186,7 +188,7 @@
       <Project>{6deea8ad-4efe-411b-bb15-a2def663a2a0}</Project>
       <Name>AopExample.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AopExample.DAL\AopExample.DAL\AopExample.DAL.csproj">
+    <ProjectReference Include="..\AopExample.DAL\AopExample.DAL.csproj">
       <Project>{59c311cf-b96e-4aa4-9903-60df9717455f}</Project>
       <Name>AopExample.DAL</Name>
     </ProjectReference>
